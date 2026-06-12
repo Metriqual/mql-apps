@@ -6,9 +6,9 @@ These aren't toy demos. Every app here ships with the integration-cost receipts 
 
 ## Apps
 
-| App | What it proves | Live |
+| App | What it proves | Guide |
 |---|---|---|
-| [**TruthLens**](./apps/truthlens) | The hallucination blocker, made visceral — same question, same model, side by side: one lane raw, one lane fact-checked by the proxy. Zero verification code in the app. | [demo](https://truthlens.metriqual.com) |
+| [**TruthLens**](./apps/truthlens) | The hallucination blocker, made visceral — same question, same model, side by side: one lane raw, one lane fact-checked by the proxy. Zero verification code in the app. | [setup guide](https://metriqual.com/apps/truthlens) |
 
 More coming: automatic-failover support bot, one-key multimodal studio, per-client spend-cap billing.
 
