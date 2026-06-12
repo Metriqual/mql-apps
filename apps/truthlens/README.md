@@ -4,7 +4,6 @@ A research assistant that shows its receipts. Ask one question; get two answers 
 
 The verified lane runs ReAct prompt scaffolding and Chain-of-Verification (and optionally Self-RAG / MARCH) **inside the proxy**. This app contains zero verification logic.
 
-![Same question, raw vs verified, side by side](./screenshot.png)
 
 ## The receipts
 
