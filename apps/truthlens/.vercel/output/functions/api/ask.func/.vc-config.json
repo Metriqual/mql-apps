@@ -1,0 +1,18 @@
+{
+  "runtime": "edge",
+  "name": "api/ask",
+  "deploymentTarget": "v8-worker",
+  "entrypoint": "index.js",
+  "assets": [],
+  "framework": {
+    "slug": "nextjs",
+    "version": "14.2.35"
+  },
+  "environment": {
+    "__NEXT_BUILD_ID": "d5KVbW7y0DWySHSE0tS5S",
+    "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "HYx1T07tVdURpf/ilUL4r7xSYbZyCyY+3emeaZ2HKm4=",
+    "__NEXT_PREVIEW_MODE_ID": "b400105e75ee516f7f44729834898557",
+    "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "7fa05183493f9e1d4b21591199ee54d44bb34df8bab263581a62d4592c0df739",
+    "__NEXT_PREVIEW_MODE_SIGNING_KEY": "661009ca810f6dac12e8edf63ba0b0035a06a594ef7818bfc34cdea228099ce5"
+  }
+}

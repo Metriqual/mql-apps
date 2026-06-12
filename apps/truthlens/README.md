@@ -30,6 +30,17 @@ The difference between the raw lane and the verified lane is **which key you use
    npm run dev
    ```
 
+## Deploy (Cloudflare Pages)
+
+The API route runs on the edge runtime and the SDK is pure `fetch`, so this deploys to Cloudflare Pages as-is:
+
+1. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → select this repo
+2. **Root directory:** `apps/truthlens` · **Framework preset:** Next.js (build command `npx @cloudflare/next-on-pages@1`, output `.vercel/output/static`)
+3. Add env vars `MQL_KEY_RAW` and `MQL_KEY_VERIFIED`
+4. Deploy, then **Custom domains** → add your subdomain (DNS is created automatically if the zone is on the same account)
+
+Also works on Vercel unchanged (root directory `apps/truthlens`).
+
 ## Stack
 
 Next.js 14 (App Router) · [`@metriqual/sdk`](https://www.npmjs.com/package/@metriqual/sdk) · Tailwind. One API route, one page.

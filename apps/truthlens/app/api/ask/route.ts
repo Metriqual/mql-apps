@@ -13,7 +13,10 @@ import { MQL } from '@metriqual/sdk';
 const BASE_URL = process.env.MQL_BASE_URL || 'https://api.metriqual.com';
 const MODEL = process.env.MQL_MODEL || 'gpt-4o-mini';
 
-export const maxDuration = 60; // verified lane may run CoVe verification passes
+// Cloudflare Pages runs Next.js dynamic routes on the edge runtime.
+// The SDK is pure fetch, so this route is fully edge-compatible.
+export const runtime = 'edge';
+export const maxDuration = 60; // used when deployed on Vercel instead
 
 export async function POST(req: NextRequest) {
   const rawKey = process.env.MQL_KEY_RAW;
